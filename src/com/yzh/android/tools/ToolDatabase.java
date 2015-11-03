@@ -11,18 +11,18 @@ import android.util.Log;
 
 import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
+import com.j256.ormlite.dao.Dao;
+import com.j256.ormlite.stmt.PreparedQuery;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 import com.yzh.android.MApplication;
+import com.yzh.android.data.DTO;
 
 /**
  * 数据库访问帮助类
- * 
- * @author 曾繁添
- * @version 1.0
  */
 public class ToolDatabase extends OrmLiteSqliteOpenHelper {
-
+	private Dao<Class, Integer> dto;
 	private static String databaseName;
 	private static int databaseVersion;
 	private static List<Class> table = new ArrayList<Class>();
@@ -52,7 +52,6 @@ public class ToolDatabase extends OrmLiteSqliteOpenHelper {
 		}
 		return dbHelper;
 	}
-
 	/**
 	 * 释放数据库连接
 	 */
@@ -109,7 +108,21 @@ public class ToolDatabase extends OrmLiteSqliteOpenHelper {
 			Log.e(ToolDatabase.class.getName(), "Unable to create datbases", e);
 		}
 	}
-
+	 /** 
+     * 获得Dao 
+     *  
+     * @return 
+     * @throws SQLException 
+     */  
+    public Dao<Class, Integer> getDao(Class cl) throws SQLException  
+    {  
+    	for (int i = 0; i < table.size(); i++) {
+			if (cl.getName().equals(table.get(i))) {
+				dto  = getDao(cl);
+			}
+		}
+		return dto;
+    }  
 	/**
 	 * 更新SQLite数据库
 	 */

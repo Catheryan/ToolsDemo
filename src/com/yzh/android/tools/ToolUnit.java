@@ -6,7 +6,6 @@ import com.yzh.android.config.SysEnv;
 
 /**
  * 单位换算工具类
- * @author 曾繁添<br>
  * 	px  ：像素 <br>
 	in  ：英寸<br>
 	mm  ：毫米<br>

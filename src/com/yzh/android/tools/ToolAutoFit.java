@@ -7,8 +7,6 @@ import android.widget.TextView;
 
 /**
  * 适配不同分辨率工具类
- * @author 曾繁添
- * @version 1.0
  */
 public class ToolAutoFit {
 

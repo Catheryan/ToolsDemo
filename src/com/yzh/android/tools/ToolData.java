@@ -18,10 +18,9 @@ import com.yzh.android.data.DTO;
 /**
  * 数据工具类
  * 
- * @author 曾繁添
+ * @author yzh
  * @version 1.0
- * @link http://www.cnblogs.com/fly100/
- * @email mengzhongyouni@gmail.com
+ * 
  */
 public class ToolData {
 	

@@ -9,8 +9,6 @@ import java.util.List;
 /**
  * 数据传输对象集合
  * 
- * @author 曾繁添
- * @version 1.0
  */
 public class DTOCollection<E extends DTO<?, ?>> extends AbstractCollection<E>
 		implements Serializable, Cloneable {

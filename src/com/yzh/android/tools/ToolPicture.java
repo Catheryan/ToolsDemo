@@ -38,7 +38,6 @@ import com.yzh.android.config.SysEnv;
 
 /**
  * 图片工具类
- * @author 曾繁添
  * @version 1.0
  */
 public class ToolPicture {

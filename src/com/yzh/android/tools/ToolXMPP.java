@@ -22,8 +22,6 @@ import android.util.Log;
 
 /**
  * XMPP工具类
- * @author 曾繁添
- * @version 1.0
  */
 public class ToolXMPP {
 

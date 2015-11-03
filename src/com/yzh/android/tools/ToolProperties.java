@@ -10,8 +10,6 @@ import com.yzh.android.MApplication;
 /**
  * 配置文件工具类
  * 
- * @author 曾繁添
- * @version 1.0
  * 
  */
 public final class ToolProperties extends Properties {

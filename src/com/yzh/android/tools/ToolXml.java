@@ -4,7 +4,6 @@ import com.thoughtworks.xstream.XStream;
 
 /**
  * XML工具类
- * @author 曾繁添
  *
  */
 public class ToolXml {

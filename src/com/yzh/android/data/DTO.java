@@ -6,9 +6,6 @@ import java.util.Iterator;
 
 /**
  * 数据传输对象
- * 
- * @author 曾繁添
- * @version 1.0
  */
 public class DTO<K, V> extends HashMap<K, V>  implements Serializable{
 

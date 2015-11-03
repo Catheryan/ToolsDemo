@@ -9,8 +9,6 @@ import com.yzh.android.MApplication;
 
 /**
  * 获取资源工具类
- * @author 曾繁添
- * @version 1.0
  */
 public class ToolResource {
 	private static final String TAG = ToolResource.class.getName();
